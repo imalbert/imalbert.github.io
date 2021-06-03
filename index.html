@@ -15,6 +15,10 @@
         --typewriter-width: 15;
       }
 
+      html {
+        font-size: 14px;
+      }
+
       body {
         width: 100%;
         height: 100vh;
@@ -85,25 +89,22 @@
         font-size: clamp(1rem, 1vw + 1rem, 2rem);
         font-weight: 400;
         line-height: clamp(2, 1vw + 2, 3);
-        opacity: 0;
+        /* opacity: 0; */
+        /* transform: translateY(3rem); */
         margin-bottom: clamp(1rem, 1vw + 1rem, 2rem);
       }
-      section.first {
-        transform: translateY(3rem);
+      /* section.first {
         animation: fadeInUp 2s ease calc(var(--typewriter-speed) + 1.5s) forwards;
       }
       section.second {
-        transform: translateY(3rem);
         animation: fadeInUp 2s ease calc(var(--typewriter-speed) + 5s) forwards;
       }
       section.third {
-        transform: translateY(3rem);
         animation: fadeInUp 2s ease calc(var(--typewriter-speed) + 9s) forwards;
       }
       section.fourth {
-        transform: translateY(3rem);
         animation: fadeInUp 2s ease calc(var(--typewriter-speed) + 13s) forwards;
-      }
+      } */
       
       @keyframes fadeInUp {
         to {
