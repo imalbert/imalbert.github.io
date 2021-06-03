@@ -22,6 +22,7 @@
         line-height: 1.75;
         font-family: Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
         background-color: var(--bg-color);
+        margin: 0 clamp(1rem, 1vw + 1rem, 2rem);
       }
       body,
       section {
@@ -30,13 +31,13 @@
       }
 
       a {
-        outline: 2px solid teal;
+        border: 2px solid blue;
         vertical-align: middle;
         padding: 0 .75rem ;
         display: inline-block;
         align-items: center;
-        height: max-content;
         text-decoration: none;
+        box-sizing: border-box;
       }
 
       .heading {
@@ -86,11 +87,11 @@
         font-size: clamp(1rem, 1vw + 1rem, 2rem);
         font-weight: 400;
         line-height: clamp(2, 1vw + 2, 3);
-        /* opacity: 0; */
-        /* transform: translateY(3rem); */
+        opacity: 0;
+        transform: translateY(3rem);
         margin: clamp(1rem, 1vw + 1rem, 2rem) 0 ;
       }
-      /* section.first {
+      section.first {
         animation: fadeInUp 2s ease calc(var(--typewriter-speed) + 1.5s) forwards;
       }
       section.second {
@@ -101,7 +102,7 @@
       }
       section.fourth {
         animation: fadeInUp 2s ease calc(var(--typewriter-speed) + 13s) forwards;
-      } */
+      }
       
       @keyframes fadeInUp {
         to {
